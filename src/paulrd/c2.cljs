@@ -1,9 +1,11 @@
-(ns ^:figwheel-hooks paulrd.c3
+(ns ^:figwheel-hooks paulrd.c2
     (:require [reagent.core :as reagent :refer [atom]]))
 
 (enable-console-print!)
 
-(println "This text is printed from src/paulrd.c3.cljs. Go ahead and edit it and see reloading in action.")
+(goog-define debug false)
+
+(println "This text is printed from src/paulrd.c2.cljs. Go ahead and edit it and see reloading in action.")
 
 ;; define your app data so that it doesn't get over-written on reload
 
@@ -24,3 +26,8 @@
   ;; your application
   ;; (swap! app-state update-in [:__figwheel_counter] inc)
 )
+
+(comment
+  (reset! app-state {:text "yes yes no"})
+  (reset! app-state {:text "Hello world!"})
+  )
