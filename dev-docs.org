@@ -1,7 +1,0 @@
-* Journal
-** 2018
-*** August
-    - started a new project using the figwheel main template:
-      clj -A:new figwheel-main paulrd/c3 --reagent
-* Tasks
-** TODO Get Cider working with this project
