@@ -1,0 +1,5 @@
+/public/js/compiled/**
+.shadow-cljs/
+.repl
+.nrepl-port
+/node_modules/
